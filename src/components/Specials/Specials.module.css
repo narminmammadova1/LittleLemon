@@ -1,0 +1,35 @@
+
+.specials{
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+}
+.onlineMenu{
+    grid-column:2/ span 10;
+margin-top: 20px;
+margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.onlineMenu button {
+    border:none ;
+    border-radius:8px;
+    width: 100px;
+    background-color: var(--mainYellow);
+    font-weight: bold;
+}
+
+.cards{
+    grid-column: 2/span 10;
+    display: flex;
+    justify-content:space-between;
+}
+
+@media (max-width:768px){
+    .cards{
+        grid-column: 2/span 10;
+
+        width: full;
+       flex-direction: column;
+       gap:10px;
+    }
+}

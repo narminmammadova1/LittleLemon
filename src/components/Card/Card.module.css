@@ -1,0 +1,69 @@
+.card{
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    border-bottom: 0.5px solid rgb(214, 213, 213);
+}
+.card img{
+    width: 100%;
+    /* height: 200px; */
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.titleDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleDiv p{
+    color: red;
+}
+
+article{
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.deliveryDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.price{
+    display: none;
+}
+@media (max-width:768px){
+
+  .card{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius:0;
+    padding-bottom:10px ;
+  }
+
+  .card img{
+    height: 100px;
+    border-radius:0;
+
+  }
+
+  .titleDiv p{
+    display: none;
+  }
+  .deliveryDiv{
+    display: none;
+  }
+  .description{
+    font-size: 11px;
+    
+  }
+  .price{
+    display: block;
+    color: red;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,40 @@
+.footerSection{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+    background-color: var(--maingray);
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+ul :first-child{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+}
+
+li{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+.imgDiv{
+    grid-column: 2;
+    background-color:gray;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+
+
+.listDiv{
+    display: flex;
+    justify-content: space-between;
+    grid-column:  4/span 6;
+    align-items: start;
+}
