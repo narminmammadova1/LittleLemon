@@ -1,0 +1,26 @@
+.reservPageDiv{
+    background-color:var(--maingray) ;
+    min-height: 100vh;
+
+}
+.reservPageDiv header{
+    background-color:var(--maingray);
+    height:60px;
+    padding-left:21px ;
+    padding-top: 10px;
+}
+.reservPageDiv h1 {
+    color: var(--mainYellow);
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.reservPageDiv .titleDiv{
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+

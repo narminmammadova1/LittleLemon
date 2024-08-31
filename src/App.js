@@ -1,20 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header/Header';
-import Title from './components/Title/Title';
-import Specials from './components/Specials/Specials';
-import Title2 from './components/Title/Title2';
+
+import "./App.css";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/header';
 import Footer from './components/footer/Footer';
+import ROUTER from './Constant/Router';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import ReservationPage from "./Pages/Reservation/ReservationPage";
+
 function App() {
   return (
-<>
-<Header/>
-<Title/>
-<Specials/>
-<Title2/>
+    <div className="app-wrapper">
+      {/* <Header /> */}
+      <div className="app-content">
+      <Routes>
+        <Route path={ROUTER.HOME} element={<Home />} />
+        <Route path={ROUTER.ABOUT} element={<About />} />
+        <Route path={ROUTER.RESERVATION} element={<ReservationPage />} />
 
-<Footer/>
-</>
+        {/* Add other routes if needed */}
+      </Routes>
+      </div>
+      {/* <Footer /> */}
+      </div>
   );
 }
 

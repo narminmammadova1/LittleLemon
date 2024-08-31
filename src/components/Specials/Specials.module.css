@@ -22,6 +22,8 @@ margin-bottom: 20px;
     grid-column: 2/span 10;
     display: flex;
     justify-content:space-between;
+    display: flex;
+flex-wrap: wrap;
 }
 
 @media (max-width:768px){

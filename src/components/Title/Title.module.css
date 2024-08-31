@@ -1,6 +1,7 @@
 .sectionTitle{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    
     background-color:var(--maingray);
     padding: 20px;
 }

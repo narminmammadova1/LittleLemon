@@ -1,3 +1,5 @@
+
+
 *{
   margin: 0;
   padding: 0;
@@ -7,4 +9,20 @@
 :root{
   --maingray:#495E57;
   --mainYellow:#F4CE14;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-wrapper{
+  display:grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+
+
+}
+
+.app-content{
 }

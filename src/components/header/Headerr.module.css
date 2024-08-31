@@ -1,0 +1,52 @@
+.header {
+    background-color: aqua;
+    width: full;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.logo {
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+   
+}
+
+ul li {
+    display: flex;
+    gap: 10px;
+  
+}
+
+
+
+/* Hamburger menü ve diğer medya sorguları */
+.hamburger {
+    display: none;
+}
+
+@media(max-width: 480px) {
+    nav {
+        display: none; /* Küçük ekranlarda menüyü gizler */
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        display: none; /* Orta ekranlarda menüyü gizler */
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+}
