@@ -8,6 +8,7 @@ import ROUTER from './Constant/Router';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import ReservationPage from "./Pages/Reservation/ReservationPage";
+import ConfirmedBooking from "./Pages/ComfirmedBooking";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path={ROUTER.HOME} element={<Home />} />
         <Route path={ROUTER.ABOUT} element={<About />} />
         <Route path={ROUTER.RESERVATION} element={<ReservationPage />} />
-
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
         {/* Add other routes if needed */}
       </Routes>
       </div>

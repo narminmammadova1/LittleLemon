@@ -46,6 +46,7 @@
      border-radius: 16px;
      background-color: var(--mainYellow);
      font-weight: bold;
+     cursor: pointer;
      
 }
 .imageDiv{

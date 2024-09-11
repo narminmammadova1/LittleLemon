@@ -1,0 +1,58 @@
+.modalDiv{
+    width: 100%;
+min-height:100vh ;
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+top:0;
+z-index: 1;
+/* display:flex ; */
+/* display: none; */
+}
+
+.modalContent{
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.modalContent .headerDiv{
+padding: 14px;
+}
+
+.modalContent p{
+
+    font-size: 40px;
+    font-weight: 700;
+    color:#EC221F;
+ text-align: center;
+ font-family:'Times New Roman', Times, serif;
+}
+
+.btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.btnDiv button {
+    width: 137px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 32px;
+    margin-bottom: 80px;
+}
+.okBtn{
+    background-color: #D9D9D9;
+    color:#EC221F;
+    font-weight: 400;
+}
+.cancelBtn{
+    background-color:#EC221F ;
+    color:white;
+}

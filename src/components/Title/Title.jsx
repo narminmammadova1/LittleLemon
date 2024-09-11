@@ -1,6 +1,10 @@
 import React from 'react'
 import styles from './Title.module.css'
+import { useNavigate } from 'react-router-dom'
+import ROUTER from '../../Constant/Router'
 const Title = () => {
+
+  const navigate=useNavigate()
   return (
     <div>
           <section className={styles.sectionTitle}>
@@ -14,7 +18,7 @@ const Title = () => {
                      qui voluptatibus, perspiciatis nulla! Sed eos asperiores neque 
                      eligendi.
                 </article>
-                <button>Reserve a table</button>
+                <button onClick={()=>navigate(ROUTER.RESERVATION)} >Reserve a table</button>
             </div>
             <div className={styles.imageDiv}>
                 <div>

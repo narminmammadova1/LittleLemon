@@ -3,6 +3,7 @@ const ROUTER={
     ABOUT:"/about",
     RESERVATION:"/reservation",
     MENU:"/menu",
-    LOGIN:"/login"
+    LOGIN:"/login",
+    COMFIRMED:"/confirmed"
 }
 export default ROUTER
