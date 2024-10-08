@@ -6,13 +6,16 @@
     padding: 20px;
 }
 .sectionTitle2{
-    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: var(--maingray);
     
 }
-
+button{margin-bottom: 20px;}
 .titleDiv, .titleDiv2{
     grid-column:2/ span 6;
     display: flex;
@@ -20,24 +23,18 @@
     flex-direction: column;
     row-gap: 10px;
 }
-.titleDiv p{
-    font-size: 18px;
+p{
+    font-size: 24px;
     font-weight: bold;
     ;
 }
 
-.titleDiv2 p{
-    font-size: 18px;
-    font-weight: bold;
-    ;
-}
+ 
 
-.titleDiv  article  {
-    color: white;
-}
-.titleDiv2  article {
-    color: black;
-}
+  article  {
+    color:black;
+    font-size: 24px;
+} 
 .titleDiv button{
      width: 20%;
      padding: 10px;
@@ -59,6 +56,7 @@
     grid-column:10;
     margin: auto;
     position: relative;
+    margin-top: 50px;
 }
 
 
@@ -70,6 +68,7 @@
     border-radius: 16px;
     width: 200px;
     height: 200px;
+    position: relative;
   
 
 }
@@ -89,32 +88,51 @@
     position:absolute;
     top: -50px;
     left: 40px;
-
+z-index: 1;
+transition: transform 0.3s, opacity 0.3s;
    
 }
+.img1{
+    z-index:0;
+    position: relative;
+    transform: scale(1.1);
+    transition: z-index 0.3s;
+}
+.img1:hover{z-index: 8;
+cursor: pointer;}
 
 
-
-@media(max-width:480px){
-   
-   
-  
-} 
 
 @media(max-width:768px){
   
     
 .titleDiv, .titleDiv2{
-    grid-column: 2/span 8;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-  .imageDiv{
-    grid-column: 12;
-  }
-  .imageDiv img {
-    width: 150px;
-    height: 150px;
-    
+
+
+.sectionTitle{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--maingray);
+    padding: 20px;
+    align-items: center;
 }
+.sectionTitle2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: var(--maingray);
     
+}.imageDiv2{
+    margin-bottom: 20px;
+}
+/* .img2{display: none;} */
 }
 

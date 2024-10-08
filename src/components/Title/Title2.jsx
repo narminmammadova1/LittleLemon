@@ -8,16 +8,12 @@ const Title2 = () => {
                 <h1>Little Lemon</h1>
                 <p>Chicago</p>
                 <article>
-                    Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Consequuntur esse architecto iusto autem, 
-                     aspernatur minus ex voluptates tempore eius error distinctio
-                     qui voluptatibus, perspiciatis nulla! Sed eos asperiores neque 
-                     eligendi.
+                "Little Lemon restaurant was founded in 1989 in Chicago. Since then, we have been serving delicious, fresh dishes inspired by Mediterranean cuisine. Our cozy atmosphere and friendly staff make every visit special. We take pride in using locally sourced ingredients to ensure the highest quality in every meal."
                 </article>
             </div>
             <div className={styles.imageDiv2}>
                 <div>
-                <img className={styles.img1}  src="./images/man.jpg" alt="rest" />
+                <img className={styles.img1}   src="./images/man.jpg" alt="rest"/>
                 <img className={styles.img2} src="./images/men.jpg" alt="rest" />
 
                 </div>

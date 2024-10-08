@@ -12,11 +12,7 @@ const Title = () => {
                 <h1>Little Lemon</h1>
                 <p>Chicago</p>
                 <article>
-                    Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Consequuntur esse architecto iusto autem, 
-                     aspernatur minus ex voluptates tempore eius error distinctio
-                     qui voluptatibus, perspiciatis nulla! Sed eos asperiores neque 
-                     eligendi.
+                "You can easily make a reservation at our restaurant for a delightful dining experience. We look forward to welcoming you and making your visit memorable!"
                 </article>
                 <button onClick={()=>navigate(ROUTER.RESERVATION)} >Reserve a table</button>
             </div>

@@ -1,14 +1,16 @@
 .header {
-    background-color: aqua;
     width: full;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 9%;
+    padding-right: 5%;
   
 }
 
 .logo {
+    width: 200px;
 }
 
 nav {
@@ -46,5 +48,17 @@ ul li {
     .hamburger {
         display: block;
         margin-right: 10px;
+    }
+
+    .header {
+        width: full;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 9%;
+        padding-right: 5%;
+        background-color: var(--maingray);
+      
     }
 }
