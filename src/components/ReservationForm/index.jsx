@@ -97,7 +97,7 @@ onSubmit: async (values) => {
 
   const handleModalSubmit = () => {
     formik.handleSubmit();
-   alert("successssssssss")
+   alert("Successfully reserved")
    navigate(ROUTER.COMFIRMED)
 
    console.log("valuesssssss",formik.values);
@@ -122,6 +122,7 @@ const isdisabled=!formik.values.time || !formik.values.date ||!formik.values.gue
     const isdisabledBtn=!formik.values.name || !formik.values.surname || !formik.values.tel || !formik.values.tel || !formik.values.email || !formik.isValid
 return (
     <div >
+
       <form onSubmit={formik.handleSubmit}   className={styles.formDiv}  action="">
         <div className={styles.reservDiv} 
         
@@ -149,6 +150,7 @@ name="time"
  onBlur={formik.handleBlur}
  required
 >
+<option value="" label="Select Time" />
     <option value="17:00">17:00</option>
     <option value="18:00">18:00</option>
     <option value="19:00">19:00</option>
@@ -172,7 +174,7 @@ required />
 
 <label htmlFor="occasion">Occasion</label>
 <select onChange={formik.handleChange} value={formik.values.occasion} id="occasion" required name="occasion">
-
+<option value="" label="Select occasion" />
 <option value="Birthday">Birthday</option>
 <option value="Anniversary">Anniversary</option>
 
@@ -250,13 +252,13 @@ required
 {formik.touched.surname && formik.errors.surname ? <div>{formik.errors.surname}</div> : null}
 
 <label htmlFor="tel">Tel</label>
-<input className={styles.input} id="tel" type="tel" required  onChange={formik.handleChange} 
+<input className={styles.input} id="tel" type="tel" value={formik.values.tel} required  onChange={formik.handleChange} 
 onBlur={formik.handleBlur}  />
 
 {formik.touched.tel && formik.errors.tel ? <div className={styles.error}>{formik.errors.tel}</div> : null}
 
 <label htmlFor="email">Email</label>
-<input className={styles.input} id="email" required type="email"  
+<input className={styles.input} id="email" value={formik.values.email} required type="email"  
 onChange={formik.handleChange} 
 onBlur={formik.handleBlur} />
 
@@ -266,7 +268,7 @@ onBlur={formik.handleBlur} />
 
 <button type="button"
  onClick={handleClick}  
- className={isdisabledBtn ? styles.disabled : styles.resBtn} >Reserve</button>
+ className={isdisabledBtn ? styles.disabled : styles.resBtn} disabled={isdisabledBtn}  >Reserve</button>
 </div>
 
 

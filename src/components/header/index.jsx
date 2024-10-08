@@ -12,8 +12,8 @@ const Header = () => {
           <li><Link to={ROUTER.HOME}>Home</Link></li>
           <li><Link to={ROUTER.ABOUT}>About</Link></li>
           <li><Link to={ROUTER.RESERVATION}>Reservations</Link></li>
-          <li><Link to={ROUTER.ORDER}>Order</Link></li>
-          <li><Link to={ROUTER.LOGIN}>Login</Link></li>
+          {/* <li><Link to={ROUTER.ORDER}>Order</Link></li> */}
+          {/* <li><Link to={ROUTER.LOGIN}>Login</Link></li> */}
         </ul>
       </nav>
       <img className={styles.hamburger} src="./images/hamburger.svg" alt="Menu" />

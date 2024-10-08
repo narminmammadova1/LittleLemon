@@ -9,7 +9,6 @@
 }
 
 .logo {
-    background-color: blue;
 }
 
 nav {
@@ -30,20 +29,19 @@ ul li {
 
 
 
-/* Hamburger menü ve diğer medya sorguları */
 .hamburger {
     display: none;
 }
 
 @media(max-width: 480px) {
     nav {
-        display: none; /* Küçük ekranlarda menüyü gizler */
+        display: none; 
     }
 }
 
 @media(max-width: 768px) {
     nav {
-        display: none; /* Orta ekranlarda menüyü gizler */
+        display: none; 
     }
     .hamburger {
         display: block;

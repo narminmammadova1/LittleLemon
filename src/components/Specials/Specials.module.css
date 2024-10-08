@@ -26,6 +26,16 @@ margin-bottom: 20px;
 flex-wrap: wrap;
 }
 
+
+
+.imgDiv{
+    display: flex;
+    gap: 20px;
+}
+.imgDiv img{
+    width: 200px;
+    height: 100px;
+}
 @media (max-width:768px){
     .cards{
         grid-column: 2/span 10;
@@ -35,3 +45,4 @@ flex-wrap: wrap;
        gap:10px;
     }
 }
+

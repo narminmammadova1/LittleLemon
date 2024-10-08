@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react'
 import ReservationForm from '../../components/ReservationForm'
  import styles from "./ReservationPage.module.css"
-import InformationForm from '../../components/InformationForm'
+// import InformationForm from '../../components/InformationForm'
 import { fetchAPI } from '../../api';
 
 

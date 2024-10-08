@@ -7,15 +7,22 @@ const Specials = () => {
       
       <section className={styles.specials}>
             <div className={styles.onlineMenu}>
-                <h2>Specials</h2>
-                <button>Online Menu</button>
+                <h2>Interyer</h2>
+                {/* <button>Online Menu</button> */}
             </div>
             <div className={styles.cards}>
-                <Card/>
-                <Card/>
-
+                {/* <Card/>
                 <Card/>
 
+                <Card/> */}
+                <div className={styles.imgDiv}>
+                <img src='/images/man.jpg'/>
+                <img src='/images/man.jpg'/>
+                <img src='/images/man.jpg'/>
+                <img src='/images/man.jpg'/>
+                <img src='/images/man.jpg'/>
+
+                </div>
             </div>
 
         </section>
