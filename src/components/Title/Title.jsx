@@ -18,7 +18,7 @@ const Title = () => {
             </div>
             <div className={styles.imageDiv}>
                 <div>
-                <img  src="./images/restauranfood.jpg" alt="rest" />
+                <img  src="./images/rest2.jfif" alt="rest" />
                 </div>
             </div>
         </section>

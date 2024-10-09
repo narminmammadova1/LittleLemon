@@ -13,8 +13,8 @@ const Title2 = () => {
             </div>
             <div className={styles.imageDiv2}>
                 <div>
-                <img className={styles.img1}   src="./images/man.jpg" alt="rest"/>
-                <img className={styles.img2} src="./images/men.jpg" alt="rest" />
+                <img className={styles.img1}   src="/images/rest8.jfif" alt="rest"/>
+                <img className={styles.img2} src="/images/rest1.jpeg" alt="rest" />
 
                 </div>
             </div>
