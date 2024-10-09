@@ -56,3 +56,34 @@ padding: 14px;
     background-color:#EC221F ;
     color:white;
 }
+
+@media(max-width:768px) {
+    .modalContent{
+        width: 80%;
+        height: 10%;
+        z-index: 2;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .modalContent p{
+
+        font-size: 24px;
+        font-weight: 700;
+        color:#EC221F;
+     text-align: center;
+     font-family:'Times New Roman', Times, serif;
+    }
+
+    .btnDiv button {
+        width: 20%;
+        height: 28px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-bottom: 80px;
+    }
+}

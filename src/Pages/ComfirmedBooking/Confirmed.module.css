@@ -8,8 +8,7 @@
  color: wheat;
  justify-content: center;
 }
-.confTitle,.confDesc{
-}
+
 .confBtn{
     width: 10%;
     padding: 8px;
@@ -17,4 +16,13 @@
     background-color: var(--mainYellow);
     border: none;
     color: white;
+}
+
+@media(max-width:768px){
+    .confBtn{
+        width: 30%;
+     
+    }
+    
+
 }
